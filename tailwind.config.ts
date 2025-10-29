@@ -57,6 +57,26 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        kpmg: {
+          blue: {
+            primary: "#1E49E2",
+            dark: "#1A28C1",
+            darker: "#131E90",
+            darkest: "#0D145E",
+            deepest: "#011F56",
+          },
+          neutral: {
+            light: "#9090A2",
+            outline: "#D5D5DC",
+          },
+          surface: {
+            light: "#E9EAFC",
+            container: "#D7D9FA",
+          },
+        },
+      },
+      fontFamily: {
+        sans: ["Open Sans", "Inter", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
