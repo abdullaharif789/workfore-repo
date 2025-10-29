@@ -16,13 +16,18 @@ const CHART_DATA: TreemapDataItem[] = [
   { name: "Database Engineers", color: "#818AEE", size: 201, percentage: 34.0 },
   { name: "Software Engineers", color: "#119FBF", size: 51, percentage: 8.6 },
   { name: "Java Software Adm...", color: "#077189", size: 30, percentage: 5.1 },
-  { name: "Infrastructure Man...", color: "#048BB7", size: 36, percentage: 6.1 },
+  {
+    name: "Infrastructure Man...",
+    color: "#048BB7",
+    size: 36,
+    percentage: 6.1,
+  },
   { name: "Database Ticklers", color: "#00B8F5", size: 13, percentage: 2.2 },
 ];
 
 const CustomTreemapContent = (props: any) => {
   const { x, y, width, height, color } = props;
-  
+
   return (
     <g>
       <rect

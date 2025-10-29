@@ -71,7 +71,12 @@ export default function ChatInterface() {
                           viewBox="0 0 24 24"
                           fill="none"
                         >
-                          <circle cx="12" cy="12" r="10" fill="url(#paint0_linear)" />
+                          <circle
+                            cx="12"
+                            cy="12"
+                            r="10"
+                            fill="url(#paint0_linear)"
+                          />
                           <defs>
                             <linearGradient
                               id="paint0_linear"
