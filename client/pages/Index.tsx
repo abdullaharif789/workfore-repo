@@ -6,7 +6,7 @@ export default function Index() {
     <div className="min-h-screen bg-[#F5F5F7] font-['Open_Sans']">
       <Header />
       <ClientFindingHeader />
-      
+
       {/* Main Content Area */}
       <div className="max-w-[1464px] mx-auto mt-6 px-6">
         <div className="bg-white rounded-xl p-8 shadow-sm">
