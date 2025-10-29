@@ -54,7 +54,9 @@ const MOCK_DATA: RoleMatch[] = [
 ];
 
 export default function RoleValidation() {
-  const [activeTab, setActiveTab] = useState<"pending" | "rejected" | "approved">("pending");
+  const [activeTab, setActiveTab] = useState<
+    "pending" | "rejected" | "approved"
+  >("pending");
   const [selectedRole, setSelectedRole] = useState<RoleMatch | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
   const [matchType, setMatchType] = useState("All");

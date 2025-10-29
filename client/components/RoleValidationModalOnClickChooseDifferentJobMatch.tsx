@@ -97,7 +97,9 @@ export default function RoleValidationModalOnClickChooseDifferentJobMatch({
                   className="flex-1 bg-transparent border-none outline-none text-[#2F2F39] font-['Open_Sans'] text-sm font-normal leading-5 cursor-pointer"
                 >
                   <option value="">Select a role...</option>
-                  <option value="Sales Representative">Sales Representative</option>
+                  <option value="Sales Representative">
+                    Sales Representative
+                  </option>
                   <option value="Account Manager">Account Manager</option>
                   <option value="Business Development Manager">
                     Business Development Manager

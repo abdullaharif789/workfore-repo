@@ -139,7 +139,10 @@ export default function RoleValidationRightPart({
 
           <div className="flex flex-col items-start self-stretch">
             {ROLE_MATCH_TASKS.map((task, index) => (
-              <div key={index} className="flex flex-col items-start self-stretch">
+              <div
+                key={index}
+                className="flex flex-col items-start self-stretch"
+              >
                 <h5 className="self-stretch text-black font-['Open_Sans'] text-base font-bold leading-[30px]">
                   {index + 1}. {task.title}
                 </h5>
