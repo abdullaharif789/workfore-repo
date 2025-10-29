@@ -1,4 +1,5 @@
 import { useState } from "react";
+import RoleValidationRightPart from "./RoleValidationRightPart";
 
 interface RoleMatch {
   id: string;
@@ -347,24 +348,24 @@ export default function RoleValidation() {
 
         {/* Right Panel - Details */}
         <div className="flex-1 flex flex-col items-center justify-center gap-5 px-10 py-20">
-          <h2 className="text-black font-['Open_Sans'] text-[22px] font-bold leading-[30px] mb-8">
-            Review Details
-          </h2>
-
           {selectedRole ? (
-            <div className="w-full max-w-md p-6 bg-white rounded-xl border border-[#818AEE] shadow-lg">
-              <h3 className="text-2xl font-bold mb-4">{selectedRole.clientRoleName}</h3>
-              <p className="text-gray-600 mb-4">{selectedRole.department}</p>
-              <div className="mb-4">
-                <p className="text-sm text-gray-500">Proposed Mapped Role:</p>
-                <p className="text-lg font-bold text-[#1A28C1]">{selectedRole.proposedRole}</p>
-              </div>
-              <div className="inline-block px-4 py-2 rounded-full border border-[#F2D01A] bg-[#FCF5CC]">
-                {selectedRole.confidence}% confidence
-              </div>
-            </div>
+            <RoleValidationRightPart
+              currentJobMatch={selectedRole.clientRoleName}
+              proposedMappedRole={selectedRole.proposedRole}
+              onApprove={() => {
+                console.log("Approved:", selectedRole);
+                // Handle approve logic
+              }}
+              onReject={() => {
+                console.log("Rejected:", selectedRole);
+                // Handle reject logic
+              }}
+            />
           ) : (
             <>
+              <h2 className="text-black font-['Open_Sans'] text-[22px] font-bold leading-[30px] mb-8">
+                Review Details
+              </h2>
               <p className="self-stretch text-black text-center font-['Open_Sans'] text-2xl font-normal leading-8">
                 Select an item from the list to review
               </p>
